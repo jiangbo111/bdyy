@@ -1,75 +1,122 @@
 @charset "utf-8";
-.body .h1 {
+
+.body,.h1 {
     margin: 0;
-    width: 1080px;
-    height: auto;
-    padding-left: 200px;
 }
 .header{
     display: block;
     overflow: hidden;
     background-color: #efefef;
-    width: 910px;
-    height: 36px;
 }
 .header>a{
     float: left;
-    display: block;
-    font-size: 14px;
-    margin-left: 12px;
-    line-height: 36px;
-    background-size: contain;
-    background: url(../images/googlelogo.png) no-repeat;
+	width: 180px;
+	height: 28px;
+	margin: 7px 30px;
+	text-indent: -9999px;
+	background: url(../images/googlelogo.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
 }
 .header span{
     float: right;
-    margin: 4px 21px;
-    padding: 3px 19px;
+    margin:  7px;
+    padding: 3px 8px;
     background-color: #6ca2f9;
     color: aliceblue;
 }
-.main{
-    width: 910px;
-    overflow: hidden;
+.signupBtn,
+.submitBtn {
+	padding: 8px 15px;
+	color: #fff;
+	background: #4B8DF8;
 }
-.main h1{
-    text-align: center;
-    font-weight: normal;
-    font-size: 19px;
-    color: #6a5565;
+
+/* main样式 */
+.main {
+	width: 910px;
+	margin: 0 auto;
+	overflow: hidden;
 }
-.left{
-    float: left;
-    width: 400px;
+
+.main h1 {
+	margin: 20px 0;
+	text-align: center;
+	font-size: 36px;
+	font-weight: 100;
 }
-.right{
-    overflow: hidden;
-   margin-top: 20px;
-    float: left;
-    width: 510px;
-    background-color: #f1f1f1;
+
+.left {
+	float: left;
+	width: 410px;
 }
-.right h4{
-    margin: 0;
-    padding-top: 20px;
-    
+
+/* signInfo */
+.right {
+	float: right;
+	width: 410px;
+	margin-top: 20px;
+	margin-left: 30px;
+	padding: 20px 30px;
+	background: #efefef;
 }
-.rbl{
-    padding: 20px 30px;
+
+.right fieldset { 
+	border: none; 
+	margin-bottom: 20px;
 }
-.hei{
-    height: 20px;
-    width: 200px;
+
+.right legend { 
+	font-weight: bold; 
+	margin-bottom: 5px;
 }
-.hei1{
-    height: 20px;
-    width: 280px;
+
+.element .pw,
+.element .cPw {
+	width: 398px;
 }
-.xzyy{
-    float: right;
-    margin: 4px 21px;
-    padding: 3px 19px;
-    background-color: #6ca2f9;
-    color: aliceblue;
+
+.element select {
+	height: 28px;
+	line-height: 28px;
 }
+
+.element .familyName,
+.element .firstName {
+	width: 179px;
+	margin-right: 8px;
+}
+
+.element .firstName { margin-right: 0; }
+
+.element .years { width: 180px; }
+
+.element .months { width: 65px; }
+
+.element .date { width: 100px; }
+
+.element .district { width: 410px; }
+
+.right .submitBtn { float: right; }
+
+.footer {
+	margin-top: 40px;
+	padding: 10px;
+	height: 24px;
+	line-height: 24px;
+	border-top: 1px solid #ccc;
+	background: #efefef;
+}
+
+.footer .bl { 
+	float: left; 
+	margin-left: 20px;
+}
+.footer .bl a { margin-right: 20px; }
+
+.footer .br { 
+	float: right; 
+	margin-right: 20px;
+}
+.footer .br a { margin-left: 20px; }
 

@@ -17,69 +17,100 @@
         </div><!-- left -->
         <div class="right">
             <div class="rbl">
-              <form>
-                <h4>姓名</h4>
-                <input class="hei" type="text" placeholder="姓氏">
-                <input class="hei" type="text" placeholder="名字"> 
-                <br />
-                <h4>选择您的用户名</h4>
-                <input class="hei1" type="text" placeholder="@gmail.com"> 
-                <br />
-                <h4>设置密码</h4>
-                <input class="hei1" type="password" placeholder="请输入密码"> 
-                <br />
-                <h4>确认密码</h4>
-                <input type="password" placeholder="请确认密码是否一致" class="hei1">
-                <br />
-                <h4>生日</h4>
-                年
-               <select>
-                        
-                        <option value="volvo">1991</option>
-                        <option value="saab">1992</option>
-                        <option value="opel">1993</option>
-                        <option value="audi">1994</option>
-                </select>
-                月
-               <select>
-                        
-                        <option value="volvo">1</option>
-                        <option value="saab">2</option>
-                        <option value="opel">3</option>
-                        <option value="audi">4</option>
-                </select>
-                日
-               <select>
-                        
-                        <option value="volvo">1</option>
-                        <option value="saab">2</option>
-                        <option value="opel">3</option>
-                        <option value="audi">4</option>
-                </select>
-                <br />
-                <br />
-                <label for="male">男
-                    <input type="radio" name="sex" id="male" /></label>
-                    <label for="female">女
-                    <input type="radio" name="sex" id="female" /></label>
-                    <br />
-                    <br />
-                位置
-               <select>
-                        
-                        <option value="volvo">中国</option>
-                        <option value="saab">美国</option>
-                        <option value="opel">俄罗斯</option>
-                        <option value="audi">法国</option>
-                </select>
+              <form action="">
+                <div class="element">
+                    <fieldset>
+                        <legend>姓名</legend>
+                        <input class="familyName" type="text" placeholder="姓" id="familyName"><input class="familyName" type="text" placeholder="名" id="familyName">
+                    </fieldset>
+                </div>
+                <div class="element">
+                    <fieldset>
+                        <legend>输入密码</legend>
+                        <label for="PW"></label>
+                        <input class="pw" type="password" placeholder="请输入密码" id="PW">
+                    </fieldset>
+                </div>
+                <div class="element">
+                        <fieldset>
+                            <legend>确认密码</legend>
+                            <label for="confirmPW"></label>
+                            <input class="pw" type="password" placeholder="请输入密码" id="confirmPW">
+                        </fieldset>
+                    </div>
+                <div class="elemrnt">
+                        <fieldset>
+                                <legend>生日</legend>
+                                <label for="years">
+                                    <select class="years" id="years" name="">
+                                        <option value="0">1990</option>
+                                        <option value="1">1991</option>
+                                        <option value="2">1992</option>
+                                        <option value="3">1993</option>
+                                        <option value="4">1994</option>
+                                    </select> 年
+                                </label> 
+                                <label for="months">
+                                    <select class="months" id="months" name="">
+                                        <option value="0">1</option>
+                                        <option value="1">2</option>
+                                        <option value="2">3</option>
+                                        <option value="3">4</option>
+                                        <option value="4">5</option>
+                                    </select> 月
+                                </label>
+                                <label for="date">
+                                    <select class="date" id="date" name="">
+                                        <option value="0">1</option>
+                                        <option value="1">2</option>
+                                        <option value="2">3</option>
+                                        <option value="3">4</option>
+                                        <option value="4">5</option>
+                                    </select> 日
+                                </label>
+                            </fieldset>
+                </div>
+
+               <div class="element">
+                    <fieldset>
+							<legend>性别</legend>
+							<label for="male"><input id="male" type="radio" name="gender"> 男</label>
+							<label for="female"><input id="female" type="radio" name="gender"> 女</label>
+						</fieldset>
+               </div>
+                
+                <div class="element">
+						<fieldset>
+							<legend>地区</legend>
+							<label for="district">
+								<select class="district" id="district" name="">
+									<option value="0">中国</option>
+									<option value="1">日本</option>
+									<option value="2">韩国</option>
+									<option value="3">朝鲜</option>
+								</select>
+							</label>
+						</fieldset>
+					</div>
             </form> 
-            <div class="xzyy">
-                <span>下一步</span>
-            </div>
+            <div class="element">
+                    <input class="submitBtn" type="submit" value="下一步">
+                </div>
             
             </div>
         </div><!-- right -->
     </div><!-- main -->
-    <div class="footer"></div><!-- footer -->
+    <div class="footer">
+            <div class="bl">
+                <a href="javascript:;">广告</a>
+                <a href="javascript:;">商务</a>
+                <a href="javascript:;">Google大全</a>
+            </div>
+            <div class="br">
+                <a href="javascript:;">帮助</a>
+                <a href="javascript:;">隐私权</a>
+                <a href="javascript:;">条款</a>
+            </div>
+        </div>
 </body>
 </html>
